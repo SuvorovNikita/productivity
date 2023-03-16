@@ -1,0 +1,70 @@
+@import "../variables/index";
+@import "../mixins/index";
+
+.c-header {
+
+  $root: &;
+  background: $white-color;
+  padding: $padding-header;
+  display: none;
+
+  @include media-up(lg) {
+    display: block;
+  }
+
+
+  &__inner {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    margin-right: 73px;
+  }
+
+  &__navigation {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+  }
+
+  &__item {
+    margin-right: 42px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__menu-link {
+    @include typo-menu;
+    color: $light-gray-color;
+
+    &.is-active {
+      color: $blue-color-1;
+    }
+  }
+
+  &__socials {
+    display: flex;
+    align-items: center;
+    margin-right: 8px;
+
+  }
+
+  &__social {
+    margin-right: 35px;
+
+    :last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__action {
+    display: flex;
+    align-items: center;
+  }
+
+}

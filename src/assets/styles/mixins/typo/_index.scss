@@ -1,0 +1,28 @@
+@import '../../variables/index';
+
+@mixin typo-button {
+  font-family: $quicksand-font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+@mixin typo-menu {
+  font-family: $quicksand-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
+  text-shadow: $shadow-4;
+}
+
+
+
+
+
+
+
+

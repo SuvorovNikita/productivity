@@ -1,0 +1,116 @@
+// Fonts
+
+$quicksand-font: 'Quicksand', sans-serif;
+$open-sans-font: 'Open Sans', sans-serif;
+$roboto-font: 'Roboto', sans-serif;
+
+//Colors
+
+$white-color: #FFFFFF;
+$gray-color: #7382A3;
+$light-gray-color: #697CA6;
+$light-gray-color-2: #B6BAC7;
+$blue-color-1: #5E81FE;
+$blue-color-2: #6188FF;
+$blue-color-3: #3A79FF;
+$light-blue-color-1: #C7D3FF;
+$light-blue-color-2: #D2E1FF;
+$light-blue-color-3: #E8ECF4;
+$light-blue-color-4: #F5F8FF;
+$light-blue-color-5: #F1F5FF;
+$dark-blue-color: #3D4F9F;
+$purple-color: #8D96BD;
+$blue-color-4: #5E81FF;
+$blue-color-5: #5982E7;
+$blue-color-6: #5283FF;
+$blue-color-7: #4C85FF;
+$light-gray-color-3: #C4C4C4;
+$light-gray-color-4: #D1D6E3;
+$gray-color-2: #ADB3CB;
+$gray-color-3: #A4ABC8;
+$dark-gray-color: #676F95;
+$light-purple-color: #D1D1E4;
+$light-blue-color-6: #A0B4FF;
+$light-blue-color-7: #DAE4FE;
+$red-color: #FFD7D7;
+$dark-red-color: #D43F3F;
+$purple-color-2: #8E96B7;
+$dark-blue-color-2: #495274;
+$light-gray-color: #697CA6;
+$blue-color-1: #5E81FE;
+$light-gray-color-2: #B6BAC7;
+$blue-color-2: #6188FF;
+$blue-color-3: #3A79FF;
+$gray-color: #7382A3;
+$light-blue-color-1: #C7D3FF;
+$light-blue-color-2: #D2E1FF;
+$light-blue-color-3: #E8ECF4;
+$dark-blue-color: #3D4F9F;
+$purple-color: #8D96BD;
+$blue-color-4: #5E81FF;
+$blue-color-5: #5982E7;
+$blue-color-6: #5283FF;
+$blue-color-7: #4C85FF;
+$light-gray-color-3: #C4C4C4;
+$light-gray-color-4: #D1D6E3;
+$gray-color-2: #ADB3CB;
+$gray-color-3: #A4ABC8;
+$dark-gray-color: #676F95;
+
+//shadow
+
+$shadow-1: 0px 10px 50px rgba(201, 209, 231, 0.6);
+$shadow-2: 0px 5px 15px rgba(188, 199, 255, 0.75);
+$shadow-3: 0px 5px 15px #6480E8;
+$shadow-4: 0px 0px 5px #E6E6E6;
+
+//gradient
+
+$gradient-1: linear-gradient(180deg, #F4F7FF 0%, #F1F5FF 100%);
+$gradient-2: linear-gradient(229.32deg, #6888FF 12.77%, #5E80FF 73.11%);
+$gradient-3: linear-gradient(101.48deg, #E9EFFF 41.56%, #E0E9FF 81.53%);
+$gradient-4: linear-gradient(180deg, #EAF0FF 0%, #F6F9FF 100%);
+
+// Animations
+
+$animation-breakpoint: md !default;
+$animation-duration: 0.2s !default;
+$animation-function: ease !default;
+$transition-breakpoint: md !default;
+$transition-duration: 0.2s !default;
+$transition-function: ease !default;
+
+
+// padding
+
+$padding-58: 58px 0 58px 0;
+$padding-header: 19px 0;
+$padding-button: 13px 16px;
+
+//radius
+
+$border-radius-button: 2px;
+$border-radius-circle: 50%;
+
+// Grid Config
+
+$grid-gutter: 15px;
+$grid-breakpoints: (
+        xs: 0,
+        sm: 568px,
+        md: 768px,
+        lg: 1024px,
+        xl: 1280px,
+);
+$container-max-widths: (
+        sm: 522px,
+        md: 708px,
+        lg: 944px,
+        xl: 1236px,
+);
+$container-max-widths-sm: (
+        sm: 522px,
+        md: 708px,
+        lg: 944px,
+        xl: 970px,
+);

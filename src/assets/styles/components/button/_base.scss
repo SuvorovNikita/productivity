@@ -1,0 +1,12 @@
+@import '../../mixins/index';
+@import '../../variables/index';
+
+&--base {
+  border-radius: $border-radius-button;
+  @include typo-button;
+
+  &-blue {
+    background: $light-blue-color-2;
+    color: $blue-color-3;
+  }
+}
