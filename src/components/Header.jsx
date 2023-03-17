@@ -1,12 +1,16 @@
+import React, {useState} from "react";
+
 import logo from "../assets/img/header/logo.svg"
 import facebook from "../assets/img/social/facebook.svg"
 import telegram from "../assets/img/social/telegramm.svg"
 import twitter from "../assets/img/social/twitter.svg"
 import medium from "../assets/img/social/medium.svg"
 
-
+import MobileHeader from "./MobileHeader.jsx";
 
 const Header = () => {
+
+
     return (
         <>
             <header className="c-header">
@@ -44,7 +48,7 @@ const Header = () => {
                                 </a>
                             </div>
                             <div className="c-header__social">
-                                <a className="c-header__social-link" href="">
+                                <a className="c-header__social-link is-active" href="">
                                     <img src={twitter} alt="twitter"/>
                                 </a>
                             </div>
@@ -55,11 +59,13 @@ const Header = () => {
                             </div>
                         </div>
                         <div className="c-header__action">
-                            <a className="c-button c-button--base c-button--base-blue">Get started</a>
+                            <a className="c-button c-button--base c-button--base-blue c-button--base-small">Get
+                                started</a>
                         </div>
                     </div>
                 </div>
             </header>
+            <MobileHeader/>
         </>
     )
 }

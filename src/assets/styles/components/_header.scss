@@ -62,6 +62,12 @@
     }
   }
 
+  &__social-link {
+    &.is-active {
+      fill: $blue-color-1;
+    }
+  }
+
   &__action {
     display: flex;
     align-items: center;
