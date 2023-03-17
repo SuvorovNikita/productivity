@@ -12,5 +12,12 @@
   &-blue {
     background: $light-blue-color-2;
     color: $blue-color-3;
+
+
+    &:hover {
+      background-color: $dark-blue-color-2;
+      color: $white-color;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
   }
 }

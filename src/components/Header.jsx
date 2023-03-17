@@ -1,10 +1,9 @@
-import React, {useState} from "react";
+import React from "react";
 
 import logo from "../assets/img/header/logo.svg"
 
 
 import MobileHeader from "./MobileHeader.jsx";
-
 const Header = ({social, menu}) => {
     return (
         <>
@@ -16,13 +15,13 @@ const Header = ({social, menu}) => {
                         </div>
                         <nav className="c-header__navigation">
                             {menu.map(obj => <div key={obj.id} className="c-header__item">
-                                <a href={obj.url} id={obj.id} className="c-header__menu-link is-active">{obj.name}</a>
+                                <a href={obj.link} id={obj.id} className="c-header__menu-link">{obj.name}</a>
                             </div>)}
                         </nav>
                         <div className="c-header__socials">
                             {
                                 social.map(obj => <div key={obj.id} className="c-header__social">
-                                    <a id={obj.id} className="c-header__social-link" href="">
+                                    <a id={obj.id} className="c-header__social-link" href={obj.link}>
                                         <img src={obj.src} alt={obj.alt}/>
                                     </a>
                                 </div>)
