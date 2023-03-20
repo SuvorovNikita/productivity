@@ -4,6 +4,45 @@
 &--base {
 
   #{$root} {
+
+    &__inner {
+      flex-wrap: wrap;
+      display: flex;
+      justify-content: center;
+      @include media-up(lg) {
+
+        justify-content: center;
+      }
+
+    }
+
+    &__item {
+      margin-bottom: 20px;
+
+      @include media-up(lg) {
+        margin-right: 76px;
+        margin-bottom: 0;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &__body {
+      padding: 20px 0;
+
+      @include media-up(lg) {
+        display: flex;
+        align-items: center;
+        padding: 58px 0;
+      }
+    }
+
     &__content {
       text-align: center;
       position: relative;

@@ -4,6 +4,7 @@ import telegram from "./assets/img/social/telegramm.svg";
 import twitter from "./assets/img/social/twitter.svg";
 import medium from "./assets/img/social/medium.svg";
 import Content from "./components/Content.jsx";
+import Customers from "./components/Customers.jsx";
 
 function App() {
 
@@ -27,6 +28,7 @@ function App() {
             <Header menu={menu} social={social}/>
             <main className="с-main">
                 <Content/>
+                <Customers/>
             </main>
         </>)
 }
