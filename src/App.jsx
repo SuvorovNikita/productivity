@@ -1,17 +1,7 @@
-import facebook from "./assets/img/social/facebook.svg";
-import telegram from "./assets/img/social/telegramm.svg";
-import twitter from "./assets/img/social/twitter.svg";
-import medium from "./assets/img/social/medium.svg";
-import bitbucket from "./assets/img/icon/bitbucket.svg";
-import apple from "./assets/img/icon/apple-watch.svg";
-import facebook1 from "./assets/img/icon/facebook.svg";
-import atlassian from "./assets/img/icon/atlassian.svg";
-import audi from "./assets/img/icon/audi.svg";
-
-
 import Header from "./components/Header.jsx";
 import Content from "./components/Content.jsx";
 import Customers from "./components/Customers.jsx";
+import {apple, atlassian, audi, bitbucket, facebook, facebook1, medium, telegram, twitter} from "./assets/js/importIcons.js";
 
 function App() {
 

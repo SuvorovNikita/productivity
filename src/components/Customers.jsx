@@ -1,5 +1,3 @@
-
-
 const Customers = ({company}) => {
     return (
         <>
