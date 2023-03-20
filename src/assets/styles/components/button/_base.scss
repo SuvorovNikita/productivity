@@ -14,10 +14,18 @@
     color: $blue-color-3;
 
 
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: $dark-blue-color-2;
       color: $white-color;
       transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    &:active {
+      background-color: $blue-color-1;
+      color: $white-color;
+      transform: translateY(1px);
+      transition: all 0.3s ease-in-out;
     }
   }
 }

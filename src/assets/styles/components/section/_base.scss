@@ -1,0 +1,47 @@
+@import "../../variables/index";
+@import "../../mixins/index";
+
+&--base {
+
+  #{$root} {
+    &__content {
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    &__text {
+      @include typo-roboto-medium;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: $dark-blue-color;
+      margin-bottom: 16px;
+    }
+
+    &__title {
+      @include typo-title;
+      color: $dark-blue-color;
+      margin-bottom: 20px;
+
+      span {
+        font-weight: 300;
+      }
+    }
+
+    &__description {
+      @include typo-description;
+      letter-spacing: 0.03em;
+      color: $purple-color;
+      margin: 0 auto 20px auto;
+      max-width: 502px;
+    }
+
+    &__actions {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 77px;
+      position: relative;
+      z-index: 1;
+    }
+  }
+}

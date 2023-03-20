@@ -1,0 +1,53 @@
+@import "../../variables/_index.scss";
+@import "../../mixins/_index.scss";
+
+&--images {
+  padding: 92px 0 184px;
+
+  #{$root} {
+
+    &__bg {
+      position: relative;
+
+      &:after {
+        content: "";
+        position: absolute;
+        top: 12px;
+        left: 232px;
+        width: 1440px;
+        height: 465px;
+        background-image: url("/src/assets/img/cloud/chart.svg");
+
+      }
+
+      &:before {
+        z-index: 1;
+        content: "";
+        position: absolute;
+        top: -96px;
+        left: 232px;
+        width: 1301.5px;
+        height: 550px;
+        background-image: url("/src/assets/img/cloud/clouds.png");
+      }
+
+      @include media-down(xl) {
+        display: none;
+      }
+    }
+
+    &__stats {
+      position: absolute;
+      left: 672px;
+      height: 122px;
+
+      @include media-down(lg) {
+        display: none;
+      }
+    }
+
+  }
+}
+
+
+

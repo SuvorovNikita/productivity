@@ -3,6 +3,7 @@ import facebook from "./assets/img/social/facebook.svg";
 import telegram from "./assets/img/social/telegramm.svg";
 import twitter from "./assets/img/social/twitter.svg";
 import medium from "./assets/img/social/medium.svg";
+import Content from "./components/Content.jsx";
 
 function App() {
 
@@ -25,7 +26,7 @@ function App() {
         <>
             <Header menu={menu} social={social}/>
             <main className="с-main">
-
+                <Content/>
             </main>
         </>)
 }

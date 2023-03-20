@@ -19,7 +19,29 @@
   text-shadow: $shadow-4;
 }
 
+@mixin typo-roboto-medium {
+  font-family: $roboto-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+}
 
+@mixin typo-title {
+  font-family: $quicksand-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 60px;
+}
+
+@mixin typo-description {
+  font-family: $roboto-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 29px;
+}
 
 
 

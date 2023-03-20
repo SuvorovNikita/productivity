@@ -1,0 +1,6 @@
+@import "../../variables/index";
+@import "../../mixins/index";
+
+&--bg {
+  background: $gradient-1;
+}

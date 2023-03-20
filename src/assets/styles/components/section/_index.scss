@@ -1,0 +1,7 @@
+.c-section {
+  $root: &;
+
+  @import "images";
+  @import "base";
+  @import "bg";
+}
