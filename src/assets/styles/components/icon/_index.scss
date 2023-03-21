@@ -1,0 +1,8 @@
+@import '../../mixins/index';
+@import '../../variables/index';
+
+.c-icon {
+  $root: &;
+
+  @import "play";
+}

@@ -35,6 +35,15 @@
   line-height: 60px;
 }
 
+
+@mixin typo-subtitle {
+  font-family: $quicksand-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 45px;
+}
+
 @mixin typo-description {
   font-family: $roboto-font;
   font-style: normal;

@@ -2,7 +2,12 @@
 @import "../../mixins/_index.scss";
 
 &--images {
-  padding: 92px 0 184px;
+  padding: 92px 0;
+
+  @include media-up(lg) {
+    padding: 92px 0 184px;
+  }
+
 
   #{$root} {
 

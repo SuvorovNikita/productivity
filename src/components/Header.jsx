@@ -28,7 +28,7 @@ const Header = ({social, menu}) => {
                             }
                         </div>
                         <div className="c-header__action">
-                            <a className="c-button c-button--base c-button--base-blue c-button--base-small">Get
+                            <a href="#" className="c-button c-button--base c-button--base-blue c-button--base-small">Get
                                 started</a>
                         </div>
                     </div>

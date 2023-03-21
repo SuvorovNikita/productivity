@@ -1,7 +1,19 @@
 import Header from "./components/Header.jsx";
-import Content from "./components/Content.jsx";
+import Hero from "./components/Hero.jsx";
 import Customers from "./components/Customers.jsx";
-import {apple, atlassian, audi, bitbucket, facebook, facebook1, medium, telegram, twitter} from "./assets/js/importIcons.js";
+import Manage from "./components/Manage.jsx";
+import {
+    apple,
+    atlassian,
+    audi,
+    bitbucket,
+    facebook,
+    facebook1,
+    medium,
+    telegram,
+    twitter
+} from "./assets/js/importIcons.js";
+
 
 function App() {
 
@@ -21,19 +33,20 @@ function App() {
     ]
 
     const company = [
-        { img: bitbucket, alt: "bitbucket" },
-        { img: apple, alt: "apple" },
-        { img: facebook1, alt: "facebook" },
-        { img: atlassian, alt: "atlassian" },
-        { img: audi, alt: "audi" },
+        {img: bitbucket, alt: "bitbucket"},
+        {img: apple, alt: "apple"},
+        {img: facebook1, alt: "facebook"},
+        {img: atlassian, alt: "atlassian"},
+        {img: audi, alt: "audi"},
     ];
 
     return (
         <>
             <Header menu={menu} social={social}/>
             <main className="с-main">
-                <Content/>
+                <Hero/>
                 <Customers company={company}/>
+                <Manage/>
             </main>
         </>)
 }

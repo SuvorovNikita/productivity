@@ -16,6 +16,15 @@
 
     }
 
+    &__inner-flow {
+      flex-flow: column nowrap;
+
+      @include media-up(lg) {
+        display: flex;
+        flex-flow: row nowrap;
+      }
+    }
+
     &__item {
       margin-bottom: 20px;
 
@@ -34,7 +43,7 @@
     }
 
     &__body {
-      padding: 20px 0;
+      padding: 92px 0;
 
       @include media-up(lg) {
         display: flex;
@@ -43,10 +52,24 @@
       }
     }
 
+    &__body-2 {
+      padding: 92px 0;
+
+      @include media-up(lg) {
+        padding: 208px 0 347px;
+      }
+
+    }
+
     &__content {
       text-align: center;
       position: relative;
       z-index: 1;
+    }
+
+    &__content-2 {
+      text-align: left;
+      //padding-left: 155px;
     }
 
     &__text {
@@ -55,6 +78,25 @@
       text-transform: uppercase;
       color: $dark-blue-color;
       margin-bottom: 16px;
+    }
+
+    &__text-2 {
+      text-align: center;
+      margin-bottom: 20px;
+      @include typo-roboto-medium;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: $dark-blue-color;
+
+      @include media-up(lg) {
+        @include typo-roboto-medium;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: $dark-blue-color;
+        margin-bottom: 27px;
+        text-align: left;
+      }
+
     }
 
     &__title {
@@ -67,6 +109,29 @@
       }
     }
 
+    &__subtitle {
+      text-align: center;
+      margin-bottom: 20px;
+      @include typo-subtitle;
+
+      color: $dark-blue-color;
+
+      span {
+        font-weight: 300;
+      }
+
+      @include media-up(lg) {
+        @include typo-subtitle;
+        color: $dark-blue-color;
+        margin-bottom: 23px;
+        text-align: left;
+        span {
+          font-weight: 300;
+        }
+      }
+
+    }
+
     &__description {
       @include typo-description;
       letter-spacing: 0.03em;
@@ -75,12 +140,80 @@
       max-width: 502px;
     }
 
+
+    &__description-2 {
+      text-align: center;
+      @include typo-description;
+      letter-spacing: 0.03em;
+      color: $purple-color;
+      margin-bottom: 20px;
+
+      @include media-up(lg) {
+        @include typo-description;
+        letter-spacing: 0.03em;
+        color: $purple-color;
+        margin: 0 auto;
+        max-width: 413px;
+        text-align: left;
+      }
+
+    }
+
     &__actions {
       display: flex;
       justify-content: center;
       margin-bottom: 77px;
       position: relative;
       z-index: 1;
+    }
+
+    &__actions-2 {
+      text-align: center;
+
+      @include media-up(lg) {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        z-index: 1;
+        margin-top: 58px;
+      }
+    }
+
+    &__images {
+
+      display: block;
+      position: relative;
+      @include media-down(lg) {
+        display: none;
+      }
+
+      img {
+        max-width: none;
+      }
+    }
+
+    &__monitor {
+      position: absolute;
+      width: 606px;
+      height: 349px;
+      left: -98px;
+      top: -57px;
+    }
+
+    &__phone {
+      position: absolute;
+      width: 107px;
+      height: 214px;
+      top: 43px;
+      left: 15px;
+    }
+
+    &__calc {
+      position: absolute;
+      width: 148px;
+      height: 280px;
+      left: 373px;
+      top: 23px;
     }
   }
 }

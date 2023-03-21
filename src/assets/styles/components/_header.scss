@@ -8,8 +8,12 @@
   padding: $padding-header;
   display: none;
 
+
   @include media-up(lg) {
     display: block;
+    position: sticky;
+    top: 0;
+    z-index: 2;
   }
 
 

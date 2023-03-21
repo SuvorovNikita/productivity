@@ -28,6 +28,13 @@
   }
 }
 
+.container-small {
+  max-width: 928px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+
 .row {
   $root: &;
   margin-left: -#{$grid-gutter};
