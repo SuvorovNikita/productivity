@@ -5,9 +5,9 @@ const Customers = ({company}) => {
                 <div className="container">
                     <div className="c-section__inner">
                         <div className="c-section__body">
-                            {company.map((obj, i) => (
-                                <div className="c-section__item" key={i}>
-                                    <img src={obj.img} alt={obj.alt}/>
+                            {company.map((obj) => (
+                                <div className="c-section__item" key={obj.id}>
+                                    <img id={obj.id} src={obj.img} alt={obj.alt}/>
                                 </div>
                             ))}
                         </div>

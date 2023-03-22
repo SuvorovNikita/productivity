@@ -44,6 +44,16 @@
   line-height: 45px;
 }
 
+
+@mixin typo-subtitle-2 {
+  font-family: $quicksand-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+
 @mixin typo-description {
   font-family: $roboto-font;
   font-style: normal;
@@ -51,6 +61,25 @@
   font-size: 15px;
   line-height: 29px;
 }
+
+@mixin typo-card-title {
+  font-family: $open-sans-font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 25px;
+
+}
+
+@mixin typo-card-text {
+  font-family: $open-sans-font;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 19px;
+}
+
+
 
 
 

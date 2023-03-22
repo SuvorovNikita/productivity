@@ -3,6 +3,12 @@
 
 .c-icon {
   $root: &;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-position: center center;
 
   @import "play";
+  @import "card";
 }

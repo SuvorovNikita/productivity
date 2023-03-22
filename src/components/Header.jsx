@@ -1,10 +1,13 @@
-import React from "react";
+import React, {useState} from "react";
 
 import logo from "../assets/img/header/logo.svg"
 
 
 import MobileHeader from "./MobileHeader.jsx";
+
 const Header = ({social, menu}) => {
+    const [activeLink, setActiveLink] = useState(1);
+
     return (
         <>
             <header className="c-header">
@@ -15,7 +18,12 @@ const Header = ({social, menu}) => {
                         </div>
                         <nav className="c-header__navigation">
                             {menu.map(obj => <div key={obj.id} className="c-header__item">
-                                <a href={obj.link} id={obj.id} className="c-header__menu-link">{obj.name}</a>
+                                <a href={obj.link} id={obj.id}
+                                   className={`c-header__menu-link ${activeLink === obj.id ? 'is-active' : ''}`}
+                                   onClick={(e) => {
+                                       e.preventDefault();
+                                       setActiveLink(obj.id);
+                                   }}>{obj.name}</a>
                             </div>)}
                         </nav>
                         <div className="c-header__socials">
