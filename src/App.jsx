@@ -15,18 +15,18 @@ import {
     telegram,
     twitter,
 } from "./assets/js/importIcons.js";
+import Stats from "./components/Stats.jsx";
 
 
 function App() {
 
 
-
     const menu = [
-        {id: 1, name: 'Home', link: "#"},
-        {id: 2, name: 'Blog', link: "#"},
-        {id: 3, name: 'Features', link: "#"},
-        {id: 4, name: 'Pricing', link: "#"},
-        {id: 5, name: 'Documentation', link: "#"},
+        {id: 1, name: 'Home', link: "home"},
+        {id: 2, name: 'Blog', link: "blog"},
+        {id: 3, name: 'Features', link: "about"},
+        {id: 4, name: 'Pricing', link: "pricing"},
+        {id: 5, name: 'Documentation', link: "documentation"},
 
     ];
 
@@ -47,12 +47,13 @@ function App() {
 
     return (
         <>
-            <Header menu={menu} social={social} />
-            <main className="с-main">
+            <Header menu={menu} social={social}/>
+            <main className="с-main" id="home">
                 <Hero/>
                 <Customers company={company}/>
                 <Manage/>
                 <About/>
+                <Stats/>
             </main>
         </>)
 }

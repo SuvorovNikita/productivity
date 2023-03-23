@@ -45,6 +45,7 @@
   &__menu-link {
     @include typo-menu;
     color: $light-gray-color;
+    cursor: pointer;
 
     &.is-active {
       color: $blue-color-1;
