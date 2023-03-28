@@ -26,7 +26,8 @@ const Header = ({social, menu}) => {
                                     onClick={(e) => {
                                         e.preventDefault();
                                         setActiveLink(obj.id);
-                                    }}>{obj.name}</Link>
+                                    }}>{obj.name}
+                                </Link>
                             </div>)}
                         </nav>
                         <div className="c-header__socials">

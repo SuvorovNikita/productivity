@@ -16,6 +16,7 @@ import {
     twitter,
 } from "./assets/js/importIcons.js";
 import Stats from "./components/Stats.jsx";
+import Blog from "./components/Blog.jsx";
 
 
 function App() {
@@ -54,6 +55,7 @@ function App() {
                 <Manage/>
                 <About/>
                 <Stats/>
+                <Blog/>
             </main>
         </>)
 }

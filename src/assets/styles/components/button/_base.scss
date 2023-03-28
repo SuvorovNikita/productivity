@@ -14,9 +14,39 @@
     height: 43px;
   }
 
+  &-lg {
+    width: 113px;
+    height: 43px;
+  }
+
+  &-xl {
+    width: 211px;
+    height: 43px;
+  }
+
   &-blue {
     background: $light-blue-color-2;
     color: $blue-color-3;
+
+
+    &:hover,
+    &:focus {
+      background-color: $dark-blue-color-2;
+      color: $white-color;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    &:active {
+      background-color: $blue-color-1;
+      color: $white-color;
+      transform: translateY(1px);
+      transition: all 0.3s ease-in-out;
+    }
+  }
+
+  &-white {
+    background: $white-color;
+    color: $color-button;
 
 
     &:hover,
@@ -90,5 +120,9 @@
       transform: translateY(1px);
       transition: all 0.3s ease-in-out;
     }
+  }
+
+  &.mr-10 {
+    margin-right: 10px;
   }
 }

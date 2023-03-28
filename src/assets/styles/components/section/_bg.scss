@@ -3,4 +3,8 @@
 
 &--bg {
   background: $gradient-1;
+
+  &-light {
+    background: $light-blue-color-4;
+  }
 }

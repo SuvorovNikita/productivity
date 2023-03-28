@@ -23,6 +23,16 @@
 
     }
 
+
+    &__hero-3 {
+      padding: 92px 0;
+
+      @include media-up(lg) {
+        padding: 104px 0 214px;
+      }
+
+    }
+
     &__inner {
       flex-wrap: wrap;
       display: flex;

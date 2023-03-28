@@ -107,13 +107,31 @@
   line-height: 83px;
 }
 
-@mixin typo-subtext{
+@mixin typo-subtext {
   font-family: $quicksand-font;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 23px;
 }
+
+@mixin typo-slider-title {
+  font-family: $quicksand-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 45px;
+}
+
+@mixin typo-slider-subtitle {
+  font-family: $quicksand-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 27px;
+}
+
+
 
 
 
