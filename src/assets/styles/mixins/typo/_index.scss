@@ -99,6 +99,21 @@
 
 }
 
+@mixin typo-percent {
+  font-family: $quicksand-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 83px;
+}
+
+@mixin typo-subtext{
+  font-family: $quicksand-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+}
 
 
 
