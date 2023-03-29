@@ -27,7 +27,7 @@
 
     &__slider-content {
       flex: 1;
-      padding-left: 57px;
+      padding-left: 65px;
     }
 
     &__slider-title {
@@ -44,8 +44,84 @@
       max-width: 408px;
     }
 
+    &__slider-wrapper {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding-left: 35px;
+    }
+
+    &__slider-img {
+      position: relative;
+
+      &:after {
+        border-radius: 5px;
+        width: 267.32px;
+        height: 267px;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 2;
+        background: linear-gradient(13.46deg, rgba(255, 199, 53, 0.44) -2.11%, rgba(255, 227, 154, 0.93) 1.9%, rgba(255, 159, 90, 0) 68.24%);
+        filter: drop-shadow(0px 15px 100px #E5EBF8);
+      }
+
+    }
+
+
+    &__slider-small-images {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-left: 12px;
+      gap: 12px;
+    }
+
+    &__slider-images-1 {
+      position: relative;
+
+      &:after {
+        height: 127px;
+        border-radius: 5px;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 2;
+        background: linear-gradient(27.48deg, rgba(255, 53, 53, 0.48) 14.02%, rgba(255, 179, 90, 0) 68%);
+        filter: drop-shadow(0px 15px 100px #E5EBF8);
+
+      }
+    }
+
+    &__slider-images-2 {
+      position: relative;
+
+      &:after {
+        height: 127px;
+        border-radius: 5px;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 2;
+        background: linear-gradient(13.49deg, rgba(53, 170, 255, 0.68) 11.59%, rgba(90, 136, 255, 0) 96.88%);
+        filter: drop-shadow(0px 15px 100px #E5EBF8);
+
+      }
+    }
+
   }
 
+
+  //swiper settings
   .swiper-button-next {
     top: 287px;
     right: 24px;
@@ -65,7 +141,7 @@
   .swiper-pagination-bullet {
     width: 8px;
     height: 8px;
-    background-color:$light-gray-color-4;
+    background-color: $light-gray-color-4;
   }
 
   .swiper-pagination-bullet-active {

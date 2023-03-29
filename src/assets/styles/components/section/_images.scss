@@ -43,16 +43,14 @@
 
     &__stats {
       position: absolute;
-      left: 672px;
-      height: 122px;
+      left: 674px;
+      height: 134px;
+      width: 147px;
+
 
       @include media-down(lg) {
         display: none;
       }
-    }
-
-    &__cloud {
-
     }
 
   }

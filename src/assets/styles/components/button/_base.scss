@@ -27,40 +27,36 @@
   &-blue {
     background: $light-blue-color-2;
     color: $blue-color-3;
-
+    transition: all 0.3s ease-in-out;
 
     &:hover,
     &:focus {
       background-color: $dark-blue-color-2;
       color: $white-color;
-      transition: background-color 0.3s ease, color 0.3s ease;
     }
 
     &:active {
       background-color: $blue-color-1;
       color: $white-color;
       transform: translateY(1px);
-      transition: all 0.3s ease-in-out;
     }
   }
 
   &-white {
     background: $white-color;
     color: $color-button;
-
+    transition: all 0.3s ease-in-out;
 
     &:hover,
     &:focus {
       background-color: $dark-blue-color-2;
       color: $white-color;
-      transition: background-color 0.3s ease, color 0.3s ease;
     }
 
     &:active {
       background-color: $blue-color-1;
       color: $white-color;
       transform: translateY(1px);
-      transition: all 0.3s ease-in-out;
     }
   }
 
@@ -69,56 +65,54 @@
     box-shadow: $shadow-5;
     color: $white-color;
     border-radius: 0;
+    transition: all 0.3s ease-in-out;
 
     &:hover,&:focus {
       background: $dark-blue-color-2;
       color: $white-color;
-      transition: background-color 0.3s ease, color 0.3s ease;
+
     }
 
     &:active {
       background-color: $blue-color-1;
       color: $white-color;
       transform: translateY(1px);
-      transition: all 0.3s ease-in-out;
     }
   }
 
   &-border {
     border: 1px solid $light-purple-color;
     color: $dark-gray-color-1;
+    transition: all 0.3s ease-in-out;
 
     &:hover,&:focus {
       background: $dark-blue-color-2;
       color: $white-color;
-      transition: background-color 0.3s ease, color 0.3s ease;
     }
 
     &:active {
       background-color: $blue-color-1;
       color: $white-color;
       transform: translateY(1px);
-      transition: all 0.3s ease-in-out;
     }
   }
 
   &-red {
     background: $red-color;
     color: $dark-red-color;
-
+    transition: all 0.3s ease-in-out;
 
     &:hover,
     &:focus {
       background-color: $dark-blue-color-2;
       color: $white-color;
-      transition: background-color 0.3s ease, color 0.3s ease;
     }
 
     &:active {
       background-color: $blue-color-1;
       color: $white-color;
       transform: translateY(1px);
-      transition: all 0.3s ease-in-out;
+
     }
   }
 
