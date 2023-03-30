@@ -1,8 +1,10 @@
 import Header from "./components/Header.jsx";
 import Hero from "./components/Hero.jsx";
-import Customers from "./components/Customers.jsx";
 import Manage from "./components/Manage.jsx";
 import About from "./components/About.jsx";
+import Stats from "./components/Stats.jsx";
+import Blog from "./components/Blog.jsx";
+import Customers from "./components/Customers.jsx";
 
 import {
     apple,
@@ -15,8 +17,7 @@ import {
     telegram,
     twitter,
 } from "./assets/js/importIcons.js";
-import Stats from "./components/Stats.jsx";
-import Blog from "./components/Blog.jsx";
+import Testimonials from "./components/Testimonials.jsx";
 
 
 function App() {
@@ -56,6 +57,7 @@ function App() {
                 <About/>
                 <Stats/>
                 <Blog/>
+                <Testimonials/>
             </main>
         </>)
 }

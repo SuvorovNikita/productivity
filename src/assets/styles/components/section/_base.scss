@@ -37,8 +37,8 @@
       flex-wrap: wrap;
       display: flex;
       justify-content: center;
-      @include media-up(lg) {
 
+      @include media-up(lg) {
         justify-content: center;
       }
 
@@ -81,11 +81,11 @@
     }
 
     &__stats {
-      display: flex;
-      flex-direction: column;
+     display: none;
 
       @include media-up(lg) {
         flex-direction: row;
+        display: flex;
       }
 
     }
@@ -264,7 +264,7 @@
         align-items: center;
         justify-content: left;
         z-index: 1;
-        margin-top: 58px;
+        margin-top: 55px;
       }
     }
 
@@ -356,7 +356,8 @@
       @include typo-percent;
       color: $white-color;
       letter-spacing: 0.03em;
-      margin-bottom: 10px;
+      margin-bottom: 5px;
+      margin-top: 7px;
 
       &-blue {
         color: $blue-color-8;

@@ -12,7 +12,7 @@
     }
 
     &__body-slider {
-      padding: 63px 0;
+      padding: 60px 0;
       max-width: 958px;
       background: $white-color;
       border: 1px solid $color-border;
@@ -33,14 +33,14 @@
     &__slider-title {
       @include typo-slider-title;
       color: $dark-blue-color;
-      margin-bottom: 24px;
+      margin-bottom: 31px;
     }
 
     &__slider-subtitle {
       @include typo-slider-subtitle;
       letter-spacing: 0.01em;
       color: $purple-color;
-      margin-bottom: 44px;
+      margin-bottom: 41px;
       max-width: 408px;
     }
 
@@ -70,7 +70,6 @@
       }
 
     }
-
 
     &__slider-small-images {
       display: flex;
@@ -120,7 +119,6 @@
 
   }
 
-
   //swiper settings
   .swiper-button-next {
     top: 287px;
@@ -135,7 +133,7 @@
   }
 
   .swiper-pagination {
-    bottom: -113px !important;
+    bottom: -112px !important;
   }
 
   .swiper-pagination-bullet {
