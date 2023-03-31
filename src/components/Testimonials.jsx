@@ -1,3 +1,7 @@
+import avatar from "./../assets/img/slider/avatar.png"
+import SliderSmall from "./slider/SliderSmall.jsx";
+import React from "react";
+
 const Testimonials = () => {
     return (
         <>
@@ -12,7 +16,10 @@ const Testimonials = () => {
                                     luptatum pro. Usu atqui laudem an.
                                 </div>
                             </div>
-                            <div className="c-section__slider">Slider</div>
+                            <div className="c-section__slider">
+                                <SliderSmall/>
+                            </div>
+
                         </div>
                     </div>
                 </div>

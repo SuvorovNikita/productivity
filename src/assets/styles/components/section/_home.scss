@@ -21,6 +21,7 @@
 
     &__slider {
       flex: 1;
+      position: relative;
     }
 
     &__title {
@@ -44,5 +45,24 @@
       letter-spacing: 0.03em;
     }
 
+  }
+  .swiper-pagination-2 {
+    position: absolute;
+    left: 140px !important;
+    bottom: -77px !important;
+  }
+
+  .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    background-color: $light-gray-color-4;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: $blue-color-6;
+  }
+
+  .swiper-pagination-bullet {
+    margin: 0 6px !important;
   }
 }

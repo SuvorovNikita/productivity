@@ -132,7 +132,10 @@
     content: url("data:image/svg+xml,%3Csvg width='27' height='19' viewBox='0 0 27 19' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M25 9.5L2 9.5M2 9.5L9.81132 17M2 9.5L9.81132 2' stroke='%23A8B4E5' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
   }
 
-  .swiper-pagination {
+
+  .swiper-pagination-1 {
+    position: absolute;
+    left: 47.5% !important;
     bottom: -112px !important;
   }
 
@@ -147,7 +150,7 @@
   }
 
   .swiper-pagination-bullet {
-    margin: 0 7px !important;
+    margin: 0 6px !important;
   }
 
 }

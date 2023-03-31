@@ -24,11 +24,10 @@ const Slider = () => {
                     rewind={true}
                     pagination={{
                         clickable: true,
-                        el: '.swiper-pagination',
-                        type: 'bullets',
+                        el: ".swiper-pagination-1"
                     }}
                     modules={[Navigation, Pagination]}
-                    className="Swiper">
+                    className="swiper-container-1">
                     <SwiperSlide>
                         <div className="c-section__body-slider">
                             <div className="c-section__slider-wrapper">
@@ -135,10 +134,10 @@ const Slider = () => {
                         </div>
                     </SwiperSlide>
                 </Swiper>
+
                 <div className="swiper-button-prev"></div>
                 <div className="swiper-button-next"></div>
-                <div className="swiper-pagination"></div>
-
+                <div className="swiper-pagination-1"></div>
             </div>
 
         </>
