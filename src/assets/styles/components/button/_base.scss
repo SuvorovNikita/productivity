@@ -1,9 +1,9 @@
-@import '../../mixins/index';
-@import '../../variables/index';
+@use '../../variables' as vars;
+@use '../../mixins/typo' as mixins;
 
 &--base {
-  border-radius: $border-radius-button;
-  @include typo-button;
+  border-radius: vars.$border-radius-button;
+  @include mixins.typo-button;
 
   &-small {
     padding: 14px 20px;
@@ -25,92 +25,92 @@
   }
 
   &-blue {
-    background: $light-blue-color-2;
-    color: $blue-color-3;
+    background: vars.$light-blue-color-2;
+    color: vars.$blue-color-3;
     transition: all 0.3s ease-in-out;
 
     &:hover,
     &:focus {
-      background-color: $dark-blue-color-2;
-      color: $white-color;
+      background-color: vars.$dark-blue-color-2;
+      color: vars.$white-color;
     }
 
     &:active {
-      background-color: $blue-color-1;
-      color: $white-color;
+      background-color: vars.$blue-color-1;
+      color: vars.$white-color;
       transform: translateY(1px);
     }
   }
 
   &-white {
-    background: $white-color;
-    color: $color-button;
+    background: vars.$white-color;
+    color: vars.$color-button;
     transition: all 0.3s ease-in-out;
 
     &:hover,
     &:focus {
-      background-color: $dark-blue-color-2;
-      color: $white-color;
+      background-color: vars.$dark-blue-color-2;
+      color: vars.$white-color;
     }
 
     &:active {
-      background-color: $blue-color-1;
-      color: $white-color;
+      background-color: vars.$blue-color-1;
+      color: vars.$white-color;
       transform: translateY(1px);
     }
   }
 
   &-blue-shadow {
-    background: $blue-color-7;
-    box-shadow: $shadow-5;
-    color: $white-color;
+    background: vars.$blue-color-7;
+    box-shadow: vars.$shadow-5;
+    color: vars.$white-color;
     border-radius: 0;
     transition: all 0.3s ease-in-out;
 
     &:hover,&:focus {
-      background: $dark-blue-color-2;
-      color: $white-color;
+      background: vars.$dark-blue-color-2;
+      color: vars.$white-color;
 
     }
 
     &:active {
-      background-color: $blue-color-1;
-      color: $white-color;
+      background-color: vars.$blue-color-1;
+      color: vars.$white-color;
       transform: translateY(1px);
     }
   }
 
   &-border {
-    border: 1px solid $light-purple-color;
-    color: $dark-gray-color-1;
+    border: 1px solid vars.$light-purple-color;
+    color: vars.$dark-gray-color-1;
     transition: all 0.3s ease-in-out;
 
     &:hover,&:focus {
-      background: $dark-blue-color-2;
-      color: $white-color;
+      background: vars.$dark-blue-color-2;
+      color: vars.$white-color;
     }
 
     &:active {
-      background-color: $blue-color-1;
-      color: $white-color;
+      background-color: vars.$blue-color-1;
+      color: vars.$white-color;
       transform: translateY(1px);
     }
   }
 
   &-red {
-    background: $red-color;
-    color: $dark-red-color;
+    background: vars.$red-color;
+    color: vars.$dark-red-color;
     transition: all 0.3s ease-in-out;
 
     &:hover,
     &:focus {
-      background-color: $dark-blue-color-2;
-      color: $white-color;
+      background-color: vars.$dark-blue-color-2;
+      color: vars.$white-color;
     }
 
     &:active {
-      background-color: $blue-color-1;
-      color: $white-color;
+      background-color: vars.$blue-color-1;
+      color: vars.$white-color;
       transform: translateY(1px);
 
     }

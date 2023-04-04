@@ -1,5 +1,6 @@
-@import "../../variables/index";
-@import "../../mixins/index";
+@use "../../variables" as vars;
+@use "../../mixins/media" as mixins;
+@use "../../mixins/typo" as typo;
 
 &--base {
 
@@ -8,7 +9,7 @@
     &__hero {
       padding: 92px 0;
 
-      @include media-up(lg) {
+      @include mixins.media-up(lg) {
         padding: 171px 0 79px;
       }
 
@@ -17,7 +18,7 @@
     &__hero-2 {
       padding: 92px 0;
 
-      @include media-up(lg) {
+      @include mixins.media-up(lg) {
         padding: 66px 0;
       }
 
@@ -27,7 +28,7 @@
     &__hero-3 {
       padding: 92px 0;
 
-      @include media-up(lg) {
+      @include mixins.media-up(lg) {
         padding: 104px 0 214px;
       }
 
@@ -38,7 +39,7 @@
       display: flex;
       justify-content: center;
 
-      @include media-up(lg) {
+      @include mixins.media-up(lg) {
         justify-content: center;
       }
 
@@ -47,7 +48,7 @@
     &__inner-flow {
       flex-flow: column nowrap;
 
-      @include media-up(lg) {
+      @include mixins.media-up(lg) {
         display: flex;
         flex-flow: row nowrap;
       }
@@ -56,7 +57,7 @@
     &__inner-flow-center {
       flex-flow: column nowrap;
 
-      @include media-up(lg) {
+      @include mixins.media-up(lg) {
         display: flex;
         flex-flow: row nowrap;
         justify-content: center;
@@ -66,7 +67,7 @@
     &__item {
       margin-bottom: 20px;
 
-      @include media-up(lg) {
+      @include mixins.media-up(lg) {
         margin-right: 76px;
         margin-bottom: 0;
 
@@ -83,7 +84,7 @@
     &__stats {
      display: none;
 
-      @include media-up(lg) {
+      @include mixins.media-up(lg) {
         flex-direction: row;
         display: flex;
       }
@@ -93,10 +94,10 @@
     &__item-1 {
       text-align: right;
       flex: 1;
-      background: $gradient-2;
+      background: vars.$gradient-2;
       padding: 92px 30px;
 
-      @include media-up(lg) {
+      @include mixins.media-up(lg) {
         padding: 66px 90px;
       }
     }
@@ -104,10 +105,10 @@
     &__item-2 {
       text-align: left;
       flex: 1;
-      background: $gradient-3;
+      background: vars.$gradient-3;
       padding: 92px 30px;
 
-      @include media-up(lg) {
+      @include mixins.media-up(lg) {
         padding: 66px 90px;
       }
     }
@@ -115,7 +116,7 @@
     &__body {
       padding: 92px 0;
 
-      @include media-up(lg) {
+      @include mixins.media-up(lg) {
         display: flex;
         align-items: center;
         padding: 58px 0;
@@ -125,7 +126,7 @@
     &__body-2 {
       padding: 92px 0;
 
-      @include media-up(lg) {
+      @include mixins.media-up(lg) {
         padding: 208px 0 217px;
       }
 
@@ -142,26 +143,27 @@
     }
 
     &__text {
-      @include typo-roboto-medium;
+      @include typo.typo-roboto-medium;
       letter-spacing: 0.1em;
       text-transform: uppercase;
-      color: $dark-blue-color;
+      color: vars.$dark-blue-color;
       margin-bottom: 16px;
     }
 
     &__text-2 {
       text-align: center;
       margin-bottom: 20px;
-      @include typo-roboto-medium;
+      @include typo.typo-roboto-medium;
       letter-spacing: 0.1em;
       text-transform: uppercase;
-      color: $dark-blue-color;
+      color: vars.$dark-blue-color;
 
-      @include media-up(lg) {
-        @include typo-roboto-medium;
+      @include mixins.media-up(lg) {
+
+        @include typo.typo-roboto-medium;
         letter-spacing: 0.1em;
         text-transform: uppercase;
-        color: $dark-blue-color;
+        color: vars.$dark-blue-color;
         margin-bottom: 27px;
         text-align: left;
       }
@@ -169,24 +171,24 @@
     }
 
     &__text-3 {
-      @include typo-roboto-medium;
+      @include typo.typo-roboto-medium;
       letter-spacing: 0.1em;
       text-transform: uppercase;
-      color: $dark-blue-color;
+      color: vars.$dark-blue-color;
       margin-bottom: 20px;
 
     }
 
     &__text-4 {
-      @include typo-card-text;
+      @include typo.typo-card-text;
       letter-spacing: 0.1em;
       text-transform: uppercase;
-      color: $gray-color-2;
+      color: vars.$gray-color-2;
     }
 
     &__title {
-      @include typo-title;
-      color: $dark-blue-color;
+      @include typo.typo-title;
+      color: vars.$dark-blue-color;
       margin-bottom: 22px;
 
       span {
@@ -195,24 +197,24 @@
     }
 
     &__title-2 {
-      @include typo-subtitle-2;
-      color: $dark-blue-color;
+      @include typo.typo-subtitle-2;
+      color: vars.$dark-blue-color;
     }
 
     &__subtitle {
       text-align: center;
       margin-bottom: 20px;
-      @include typo-subtitle;
+      @include typo.typo-subtitle;
 
-      color: $dark-blue-color;
+      color: vars.$dark-blue-color;
 
       span {
         font-weight: 300;
       }
 
-      @include media-up(lg) {
-        @include typo-subtitle;
-        color: $dark-blue-color;
+      @include mixins.media-up(lg) {
+        @include typo.typo-subtitle;
+        color: vars.$dark-blue-color;
         margin-bottom: 23px;
         text-align: left;
         span {
@@ -223,24 +225,24 @@
     }
 
     &__description {
-      @include typo-description;
+      @include typo.typo-description;
       letter-spacing: 0.03em;
-      color: $purple-color;
+      color: vars.$purple-color;
       margin: 0 auto 20px auto;
       max-width: 502px;
     }
 
     &__description-2 {
       text-align: center;
-      @include typo-description;
+      @include typo.typo-description;
       letter-spacing: 0.03em;
-      color: $purple-color;
+      color: vars.$purple-color;
       margin-bottom: 20px;
 
-      @include media-up(lg) {
-        @include typo-description;
+      @include mixins.media-up(lg) {
+        @include typo.typo-description;
         letter-spacing: 0.03em;
-        color: $purple-color;
+        color: vars.$purple-color;
         margin: 0 auto;
         max-width: 413px;
         text-align: left;
@@ -259,7 +261,7 @@
     &__actions-2 {
       text-align: center;
 
-      @include media-up(lg) {
+      @include mixins.media-up(lg) {
         display: flex;
         align-items: center;
         justify-content: left;
@@ -274,7 +276,7 @@
       justify-content: center;
       margin-top: 92px;
 
-      @include media-up(md) {
+      @include mixins.media-up(md) {
         margin-top: 120px;
       }
     }
@@ -283,7 +285,7 @@
 
       display: block;
       position: relative;
-      @include media-down(lg) {
+      @include mixins.media-down(lg) {
         display: none;
       }
 
@@ -336,10 +338,10 @@
     &__line {
       width: 28px;
       height: 1px;
-      background: $light-blue-color-7;
+      background: vars.$light-blue-color-7;
       margin: 20px;
 
-      @include media-up(md) {
+      @include mixins.media-up(md) {
         margin: 126px 20px 0 20px;
       }
 
@@ -348,29 +350,29 @@
     &__line-small {
       width: 15px;
       height: 1px;
-      background: $light-blue-color-7;
+      background: vars.$light-blue-color-7;
       margin: 0 16px;
     }
 
     &__percent {
-      @include typo-percent;
-      color: $white-color;
+      @include typo.typo-percent;
+      color: vars.$white-color;
       letter-spacing: 0.03em;
       margin-bottom: 5px;
       margin-top: 7px;
 
       &-blue {
-        color: $blue-color-8;
+        color: vars.$blue-color-8;
       }
     }
 
     &__subtext {
-      @include typo-subtext;
+      @include typo.typo-subtext;
       letter-spacing: 0.03em;
-      color: $white-color;
+      color: vars.$white-color;
 
       &-blue {
-        color: $blue-color-8;
+        color: vars.$blue-color-8;
       }
     }
   }

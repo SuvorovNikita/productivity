@@ -1,7 +1,7 @@
-@import "button/index";
-@import "icon/index";
-@import "card/index";
-@import "header";
-@import "mobile-menu";
-@import "section/index";
+@use "button";
+@use "icon";
+@use "card";
+@use "header";
+@use "mobile-menu";
+@use "section";
 

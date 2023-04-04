@@ -1,5 +1,6 @@
-@import "../../variables/index";
-@import "../../mixins/index";
+@use "../../variables" as vars;
+@use "../../mixins" as mixins;
+@use "../../mixins/typo" as typo;
 
 &--home {
   padding: 108px 0;
@@ -25,23 +26,23 @@
     }
 
     &__title {
-      @include typo-subtle-home;
+      @include typo.typo-subtle-home;
       letter-spacing: 0.1em;
       text-transform: uppercase;
-      color: $dark-blue-color;
+      color: vars.$dark-blue-color;
       margin-bottom: 31px;
     }
 
     &__subtitle {
-      @include typo-subtitle;
-      color: $dark-blue-color;
+      @include typo.typo-subtitle;
+      color: vars.$dark-blue-color;
       margin-bottom: 17px;
     }
 
     &__context {
-      @include typo-context-home;
+      @include typo.typo-context-home;
       max-width: 323px;
-      color: $gray-color-3;
+      color: vars.$gray-color-3;
       letter-spacing: 0.03em;
     }
 
@@ -55,11 +56,11 @@
   .swiper-pagination-bullet {
     width: 8px;
     height: 8px;
-    background-color: $light-gray-color-4;
+    background-color: vars.$light-gray-color-4;
   }
 
   .swiper-pagination-bullet-active {
-    background-color: $blue-color-6;
+    background-color: vars.$blue-color-6;
   }
 
   .swiper-pagination-bullet {

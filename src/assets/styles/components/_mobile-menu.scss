@@ -1,5 +1,6 @@
-@import "../variables/index";
-@import "../mixins/index";
+@use "../variables" as vars;
+@use "../mixins/media" as mixins;
+@use "../mixins/typo" as typo;
 
 
 .c-mobile-header {
@@ -8,13 +9,13 @@
   z-index: 2;
   top: 0;
 
-  @include media-up(lg) {
+  @include mixins.media-up(lg) {
     display: none;
   }
 
   &__inner {
     max-width: 100%;
-    background-color: $white-color;
+    background-color: vars.$white-color;
   }
 
   &__top {
@@ -22,7 +23,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: $white-color;
+    background-color: vars.$white-color;
     border-bottom: 1px solid #eee;
   }
 
@@ -34,7 +35,7 @@
   &__toggle {
     font-size: 24px;
     cursor: pointer;
-    color: $blue-color-1;
+    color: vars.$blue-color-1;
   }
 
   &__body {
@@ -45,7 +46,7 @@
     bottom: 0;
     padding: 10px 20px 20px 20px;
     display: block;
-    background-color: $white-color;
+    background-color: vars.$white-color;
     flex-direction: column;
     justify-content: space-between;
     transform: translateX(-100%);
@@ -82,12 +83,12 @@
   }
 
   &__link {
-    @include typo-menu;
+    @include typo.typo-menu;
     font-size: 18px;
-    color: $light-gray-color;
+    color: vars.$light-gray-color;
 
     &:hover {
-      color: $blue-color-1;
+      color: vars.$blue-color-1;
     }
   }
 
@@ -105,7 +106,7 @@
     text-decoration: none;
 
     &:hover {
-      color: $blue-color-1;
+      color: vars.$blue-color-1;
     }
   }
 

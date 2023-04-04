@@ -1,5 +1,6 @@
-@import "../../variables/index";
-@import "../../mixins/index";
+@use "../../variables" as vars;
+@use "../../mixins/media" as mixins;
+@use "../../mixins/typo" as typo;
 
 
 &--slider {
@@ -14,9 +15,9 @@
     &__body-slider {
       padding: 60px 0;
       max-width: 958px;
-      background: $white-color;
-      border: 1px solid $color-border;
-      box-shadow: $shadow-6;
+      background: vars.$white-color;
+      border: 1px solid vars.$color-border;
+      box-shadow: vars.$shadow-6;
       display: flex;
       margin: 0 auto;
     }
@@ -31,15 +32,15 @@
     }
 
     &__slider-title {
-      @include typo-slider-title;
-      color: $dark-blue-color;
+      @include typo.typo-slider-title;
+      color: vars.$dark-blue-color;
       margin-bottom: 31px;
     }
 
     &__slider-subtitle {
-      @include typo-slider-subtitle;
+      @include typo.typo-slider-subtitle;
       letter-spacing: 0.01em;
-      color: $purple-color;
+      color: vars.$purple-color;
       margin-bottom: 41px;
       max-width: 408px;
     }
@@ -132,7 +133,6 @@
     content: url("data:image/svg+xml,%3Csvg width='27' height='19' viewBox='0 0 27 19' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M25 9.5L2 9.5M2 9.5L9.81132 17M2 9.5L9.81132 2' stroke='%23A8B4E5' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
   }
 
-
   .swiper-pagination-1 {
     position: absolute;
     left: 47.5% !important;
@@ -142,11 +142,11 @@
   .swiper-pagination-bullet {
     width: 8px;
     height: 8px;
-    background-color: $light-gray-color-4;
+    background-color: vars.$light-gray-color-4;
   }
 
   .swiper-pagination-bullet-active {
-    background-color: $blue-color-6;
+    background-color: vars.$blue-color-6;
   }
 
   .swiper-pagination-bullet {

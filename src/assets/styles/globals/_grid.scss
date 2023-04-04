@@ -1,23 +1,23 @@
 @use 'sass:math';
-@import '../mixins/index';
-@import '../variables/index';
+@use '../mixins/media' as mixins;
+@use '../variables' as vars;
 
 .container {
   display: block;
   width: auto;
   max-width: 100%;
-  padding: 0 $grid-gutter;
+  padding: 0 vars.$grid-gutter;
   margin: 0 auto;
 
-  @each $key, $value in $container-max-widths {
-    @include media-up($key) {
+  @each $key, $value in vars.$container-max-widths {
+    @include mixins.media-up($key) {
       max-width: $value;
     }
   }
 
   &--sm {
-    @each $key, $value in $container-max-widths-sm {
-      @include media-up($key) {
+    @each $key, $value in vars.$container-max-widths-sm {
+      @include mixins.media-up($key) {
         max-width: $value;
       }
     }
@@ -37,20 +37,20 @@
 
 .row {
   $root: &;
-  margin-left: -#{$grid-gutter};
-  margin-right: -#{$grid-gutter};
+  margin-left: -#{vars.$grid-gutter};
+  margin-right: -#{vars.$grid-gutter};
   display: flex;
   flex-flow: row wrap;
 
-  @include media-down(lg) {
+  @include mixins.media-down(lg) {
     flex-direction: column-reverse;
   }
 }
 
 .row-no-wrap {
   $root: &;
-  margin-left: -#{$grid-gutter};
-  margin-right: -#{$grid-gutter};
+  margin-left: -#{vars.$grid-gutter};
+  margin-right: -#{vars.$grid-gutter};
   display: flex;
 }
 
@@ -63,8 +63,8 @@
 }
 
 [class^='col'] {
-  padding-left: $grid-gutter;
-  padding-right: $grid-gutter;
+  padding-left: vars.$grid-gutter;
+  padding-right: vars.$grid-gutter;
   max-width: 100%;
   flex-basis: 100%;
   flex-grow: 1;
@@ -80,7 +80,7 @@
 }
 
 $size: math.div(100%, 12);
-$margin: $grid-gutter * 2;
+$margin: vars.$grid-gutter * 2;
 
 @for $i from 1 through 12 {
   .col-#{$i} {
@@ -89,9 +89,9 @@ $margin: $grid-gutter * 2;
   }
 }
 
-@each $key, $value in $grid-breakpoints {
+@each $key, $value in vars.$grid-breakpoints {
   .col-#{$key}-auto {
-    @include media-up($key) {
+    @include mixins.media-up($key) {
       flex: 1 0 0;
     }
   }
@@ -101,7 +101,7 @@ $margin: $grid-gutter * 2;
       flex-basis: 100%;
       flex-grow: 1;
 
-      @include media-up($key) {
+      @include mixins.media-up($key) {
         flex: 0 0 calc(#{$size * $i});
         max-width: calc(#{$size * $i});
       }
@@ -113,19 +113,19 @@ $margin: $grid-gutter * 2;
   display: none;
 }
 
-@each $key, $value in $grid-breakpoints {
+@each $key, $value in vars.$grid-breakpoints {
   .d-block-#{$key} {
     display: none;
 
-    @include media-up($key) {
+    @include mixins.media-up($key) {
       display: block;
     }
   }
 }
 
-@each $key, $value in $grid-breakpoints {
+@each $key, $value in vars.$grid-breakpoints {
   .d-none-#{$key} {
-    @include media-up($key) {
+    @include mixins.media-up($key) {
       display: none;
     }
   }

@@ -1,5 +1,5 @@
-@import '../../mixins/index';
-@import '../../variables/index';
+@use '../../mixins/index' as mixins;
+@use '../../variables/index' as vars;
 
 .c-icon {
   $root: &;

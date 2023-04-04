@@ -8,12 +8,10 @@ import "swiper/css/pagination";
 
 
 import {Pagination} from "swiper";
-
 const SliderSmall = () => {
 
     return (
         <>
-
             <Swiper
                 rewind={true}
                 modules={[Pagination]}

@@ -1,8 +1,8 @@
 @use 'sass:map';
-@import './../../variables/index';
+@use './../../variables' as vars;
 
 @mixin media-up($breakpoint) {
-  $breakpoint: map.get($grid-breakpoints, $breakpoint);
+  $breakpoint: map.get(vars.$grid-breakpoints, $breakpoint);
 
   @media (min-width: $breakpoint) {
     @content;
@@ -10,7 +10,7 @@
 }
 
 @mixin media-down($breakpoint) {
-  $breakpoint: map.get($grid-breakpoints, $breakpoint);
+  $breakpoint: map.get(vars.$grid-breakpoints, $breakpoint);
 
   @media (max-width: $breakpoint) {
     @content;

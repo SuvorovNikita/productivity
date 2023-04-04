@@ -1,16 +1,14 @@
-@import "../../variables/index";
-@import "../../mixins/index";
+@use "../../variables" as vars;
+@use "../../mixins" as mixins;
 
 &--bg {
-  background: $gradient-1;
+  background: vars.$gradient-1;
 
   &-light {
-    background: $light-blue-color-4;
+    background: vars.$light-blue-color-4;
   }
 
   &-bold {
-    background: $gradient-4;
+    background: vars.$gradient-4;
   }
-
-
 }

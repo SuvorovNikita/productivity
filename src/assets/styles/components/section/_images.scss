@@ -1,10 +1,10 @@
-@import "../../variables/_index.scss";
-@import "../../mixins/_index.scss";
+@use "../../variables" as vars;
+@use "../../mixins/media" as mixins;
 
 &--images {
   padding: 92px 0;
 
-  @include media-up(lg) {
+  @include mixins.media-up(lg) {
     padding: 92px 0 184px;
   }
 
@@ -36,7 +36,7 @@
         background-image: url("/src/assets/img/cloud/clouds.png");
       }
 
-      @include media-down(xl) {
+      @include mixins.media-down(xl) {
         display: none;
       }
     }
@@ -48,7 +48,7 @@
       width: 147px;
 
 
-      @include media-down(lg) {
+      @include mixins.media-down(lg) {
         display: none;
       }
     }

@@ -1,4 +1,3 @@
-import avatar from "./../assets/img/slider/avatar.png"
 import SliderSmall from "./slider/SliderSmall.jsx";
 import React from "react";
 

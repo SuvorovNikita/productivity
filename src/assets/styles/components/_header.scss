@@ -1,15 +1,16 @@
-@import "../variables/index";
-@import "../mixins/index";
+@use "../variables" as vars;
+@use "../mixins/media" as mixins;
+@use "../mixins/typo" as typo;
 
 .c-header {
 
   $root: &;
-  background: $white-color;
-  padding: $padding-header;
+  background: vars.$white-color;
+  padding: vars.$padding-header;
   display: none;
 
 
-  @include media-up(lg) {
+  @include mixins.media-up(lg) {
     display: block;
     position: sticky;
     top: 0;
@@ -43,12 +44,12 @@
   }
 
   &__menu-link {
-    @include typo-menu;
-    color: $light-gray-color;
+    @include typo.typo-menu;
+    color: vars.$light-gray-color;
     cursor: pointer;
 
     &.is-active {
-      color: $blue-color-1;
+      color: vars.$blue-color-1;
     }
   }
 
@@ -69,7 +70,7 @@
 
   &__social-link {
     &.is-active {
-      fill: $blue-color-1;
+      fill: vars.$blue-color-1;
     }
   }
 

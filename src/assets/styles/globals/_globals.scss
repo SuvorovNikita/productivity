@@ -1,4 +1,4 @@
-@import "../variables/_index.scss";
+@use "../variables" as vars;
 
 html {
   padding: 0;

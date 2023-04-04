@@ -1,7 +1,7 @@
-@import '../../variables/index';
+@use '../../variables' as vars;
 
 @mixin typo-button {
-  font-family: $quicksand-font;
+  font-family: vars.$quicksand-font;
   font-style: normal;
   font-weight: 700;
   font-size: 13px;
@@ -9,18 +9,18 @@
 }
 
 @mixin typo-menu {
-  font-family: $quicksand-font;
+  font-family: vars.$quicksand-font;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 15px;
   letter-spacing: 0.05em;
   text-transform: capitalize;
-  text-shadow: $shadow-4;
+  text-shadow: vars.$shadow-4;
 }
 
 @mixin typo-roboto-medium {
-  font-family: $roboto-font;
+  font-family: vars.$roboto-font;
   font-style: normal;
   font-weight: 500;
   font-size: 10px;
@@ -28,7 +28,7 @@
 }
 
 @mixin typo-title {
-  font-family: $quicksand-font;
+  font-family: vars.$quicksand-font;
   font-style: normal;
   font-weight: 500;
   font-size: 48px;
@@ -37,7 +37,7 @@
 
 
 @mixin typo-subtitle {
-  font-family: $quicksand-font;
+  font-family: vars.$quicksand-font;
   font-style: normal;
   font-weight: 500;
   font-size: 36px;
@@ -46,7 +46,7 @@
 
 
 @mixin typo-subtitle-2 {
-  font-family: $quicksand-font;
+  font-family: vars.$quicksand-font;
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
@@ -55,7 +55,7 @@
 
 
 @mixin typo-description {
-  font-family: $roboto-font;
+  font-family: vars.$roboto-font;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -63,7 +63,7 @@
 }
 
 @mixin typo-card-title {
-  font-family: $open-sans-font;
+  font-family: vars.$open-sans-font;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -72,7 +72,7 @@
 }
 
 @mixin typo-card-text {
-  font-family: $open-sans-font;
+  font-family: vars.$open-sans-font;
   font-style: normal;
   font-weight: 600;
   font-size: 11px;
@@ -80,7 +80,7 @@
 }
 
 @mixin typo-card-text-2 {
-  font-family: $open-sans-font;
+  font-family: vars.$open-sans-font;
   font-style: normal;
   font-weight: 400;
   font-size: 48px;
@@ -89,7 +89,7 @@
 }
 
 @mixin typo-card-text-3 {
-  font-family: $open-sans-font;
+  font-family: vars.$open-sans-font;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -100,7 +100,7 @@
 }
 
 @mixin typo-percent {
-  font-family: $quicksand-font;
+  font-family: vars.$quicksand-font;
   font-style: normal;
   font-weight: 400;
   font-size: 48px;
@@ -108,7 +108,7 @@
 }
 
 @mixin typo-subtext {
-  font-family: $quicksand-font;
+  font-family: vars.$quicksand-font;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -116,7 +116,7 @@
 }
 
 @mixin typo-slider-title {
-  font-family: $quicksand-font;
+  font-family: vars.$quicksand-font;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -124,7 +124,7 @@
 }
 
 @mixin typo-slider-subtitle {
-  font-family: $quicksand-font;
+  font-family: vars.$quicksand-font;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -132,7 +132,7 @@
 }
 
 @mixin typo-subtle-home {
-  font-family: $roboto-font;
+  font-family: vars.$roboto-font;
   font-style: normal;
   font-weight: 500;
   font-size: 10px;
@@ -140,7 +140,7 @@
 }
 
 @mixin typo-context-home {
-  font-family: $open-sans-font;
+  font-family: vars.$open-sans-font;
   font-style: normal;
   font-weight: 600;
   font-size: 12px;

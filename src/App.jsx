@@ -22,7 +22,6 @@ import Testimonials from "./components/Testimonials.jsx";
 
 function App() {
 
-
     const menu = [
         {id: 1, name: 'Home', link: "home"},
         {id: 2, name: 'Blog', link: "blog"},
