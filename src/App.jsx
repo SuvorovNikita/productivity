@@ -18,6 +18,7 @@ import {
     twitter,
 } from "./assets/js/importIcons.js";
 import Testimonials from "./components/Testimonials.jsx";
+import Documents from "./components/Documents.jsx";
 
 
 function App() {
@@ -46,6 +47,29 @@ function App() {
         {id: 5, img: audi, alt: "audi"},
     ];
 
+    const items = [
+        {
+            title: "Reque insolens in vel?",
+            content: "Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.\n"
+        },
+        {
+            title: "Vis rebum error graecis ea, id sit postea accusamus?",
+            content: "Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.\n"
+        },
+        {
+            title: "Lorem repudiandae ne nec?",
+            content: "Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.\n"
+        },
+        {
+            title: "Ad dicit numquam vel. Et eos iudico feugait percipitur?",
+            content: "Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.\n"
+        },
+        {
+            title: "Sea no dico percipitur. Fierent constituam definitiones id eum?",
+            content: "Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.\n"
+        }
+    ];
+
     return (
         <>
             <Header menu={menu} social={social}/>
@@ -57,6 +81,7 @@ function App() {
                 <Stats/>
                 <Blog/>
                 <Testimonials/>
+                <Documents items={items}/>
             </main>
         </>)
 }
