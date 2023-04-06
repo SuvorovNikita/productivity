@@ -5,6 +5,8 @@ import About from "./components/About.jsx";
 import Stats from "./components/Stats.jsx";
 import Blog from "./components/Blog.jsx";
 import Customers from "./components/Customers.jsx";
+import Testimonials from "./components/Testimonials.jsx";
+import Documents from "./components/Documents.jsx";
 
 import {
     apple,
@@ -17,8 +19,6 @@ import {
     telegram,
     twitter,
 } from "./assets/js/importIcons.js";
-import Testimonials from "./components/Testimonials.jsx";
-import Documents from "./components/Documents.jsx";
 
 
 function App() {
@@ -81,7 +81,7 @@ function App() {
                 <Stats/>
                 <Blog/>
                 <Testimonials/>
-                <Documents items={items}/>
+                {/*<Documents items={items}/>*/}
             </main>
         </>)
 }

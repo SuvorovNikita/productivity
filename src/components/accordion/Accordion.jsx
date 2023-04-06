@@ -2,7 +2,7 @@ import {useState} from "react";
 
 const Accordion = ({items}) => {
     return (
-        <div>
+        <>
             {items.map((item, index) => {
                 const [isOpen, setIsOpen] = useState(false);
                 return (
@@ -12,7 +12,7 @@ const Accordion = ({items}) => {
                     </div>
                 );
             })}
-        </div>
+        </>
     );
 }
 export default Accordion;
